@@ -14,7 +14,6 @@ const ProductDescriptionInfo = ({
   finalProductPrice,
   cartItems,
   wishlistItem,
-  compareItem,
 }) => {
   const dispatch = useDispatch();
   const [selectedProductColor, setSelectedProductColor] = useState(
@@ -282,7 +281,6 @@ const ProductDescriptionInfo = ({
 
 ProductDescriptionInfo.propTypes = {
   cartItems: PropTypes.array,
-  compareItem: PropTypes.shape({}),
   currency: PropTypes.shape({}),
   discountedPrice: PropTypes.number,
   finalDiscountedPrice: PropTypes.number,

@@ -14,7 +14,6 @@ const ProductGridListSingle = ({
   currency,
   cartItem,
   wishlistItem,
-  compareItem,
   spaceBottomClass
 }) => {
   const [modalShow, setModalShow] = useState(false);
@@ -294,7 +293,6 @@ const ProductGridListSingle = ({
         finalProductPrice={finalProductPrice}
         finalDiscountedPrice={finalDiscountedPrice}
         wishlistItem={wishlistItem}
-        compareItem={compareItem}
       />
     </Fragment>
   );
@@ -302,7 +300,6 @@ const ProductGridListSingle = ({
 
 ProductGridListSingle.propTypes = {
   cartItem: PropTypes.shape({}),
-  compareItem: PropTypes.shape({}),
   currency: PropTypes.shape({}),
   product: PropTypes.shape({}),
   spaceBottomClass: PropTypes.string,
