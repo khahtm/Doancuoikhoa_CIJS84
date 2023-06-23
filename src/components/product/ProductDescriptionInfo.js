@@ -6,7 +6,6 @@ import { getProductCartQuantity } from "../../helpers/product";
 import Rating from "./sub-components/ProductRating";
 import { addToCart } from "../../store/slices/cart-slice";
 import { addToWishlist } from "../../store/slices/wishlist-slice";
-
 const ProductDescriptionInfo = ({
   product,
   discountedPrice,
